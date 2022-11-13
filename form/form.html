@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <button id='submit'>Submit</button>
+
+    <script>
+       document.getElementById('submit').onclick = function(){
+          location.href = '/login?' + 'email=' + document.getElementById('email').value + '&password=' + document.getElementById('password').value;
+        }
+      </script>
+
+</body>
+</html> 
